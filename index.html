@@ -82,12 +82,17 @@
                                  
 
 
-
-<iframe src="assets/audio1.mpeg" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe> 
-<audio controls autoplay loop  id="playAudio">
-    <source src="assets/audio1.mpeg">
+<audio id="divAudio">
+   <source src="assets/audio1.mpeg" type="audio/mp3">
 </audio>
+
+<script>
+   var vAudio = document.getElementById("divAudio");
+   function playMusic()
+   {
+      vAudio.play();
+   }
+</script>
 
 
                                     <li class="nav-item active">
